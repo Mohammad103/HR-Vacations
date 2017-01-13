@@ -320,7 +320,7 @@
         <scene sceneID="tOZ-wQ-7e8">
             <objects>
                 <navigationController id="9ct-ip-TBx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Employees" id="GVe-zd-4bn"/>
+                    <tabBarItem key="tabBarItem" title="Employees" image="employees" id="GVe-zd-4bn"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3sc-Wm-Jvn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -445,7 +445,7 @@
         <scene sceneID="8T0-mI-gxK">
             <objects>
                 <navigationController id="ifa-sj-cmu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Vacations" id="5mF-uu-v9y"/>
+                    <tabBarItem key="tabBarItem" title="Vacations" image="vacations" id="5mF-uu-v9y"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bUP-xg-baa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -873,7 +873,7 @@
         <scene sceneID="X6H-dk-WuB">
             <objects>
                 <navigationController id="9fk-jM-YCV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Vacations" id="UdO-Bz-B7b"/>
+                    <tabBarItem key="tabBarItem" title="My Vacations" image="my_vacation" id="UdO-Bz-B7b"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QpW-Ex-oBR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -891,7 +891,7 @@
         <scene sceneID="yeG-Wp-sQq">
             <objects>
                 <navigationController id="W6H-Lu-ZCK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="9SR-90-NEx"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="9SR-90-NEx"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YyG-s0-vHi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1766,7 +1766,11 @@
     </scenes>
     <resources>
         <image name="avatar" width="336" height="336"/>
+        <image name="employees" width="20" height="20"/>
         <image name="logo" width="512" height="512"/>
+        <image name="my_vacation" width="20" height="20"/>
+        <image name="profile" width="20" height="20"/>
         <image name="show-password" width="22" height="16"/>
+        <image name="vacations" width="20" height="20"/>
     </resources>
 </document>
