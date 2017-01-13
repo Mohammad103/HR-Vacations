@@ -13,6 +13,24 @@
 		84176EC41E290756005F25FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84176EC21E290756005F25FC /* Main.storyboard */; };
 		84176EC61E290756005F25FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84176EC51E290756005F25FC /* Assets.xcassets */; };
 		84176EC91E290756005F25FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84176EC71E290756005F25FC /* LaunchScreen.storyboard */; };
+		84A969B31E29195B006360FE /* AlertUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A969A31E29195B006360FE /* AlertUtility.swift */; };
+		84A969B41E29195B006360FE /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A969A41E29195B006360FE /* Array+Extension.swift */; };
+		84A969B51E29195B006360FE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A969A51E29195B006360FE /* Constants.swift */; };
+		84A969B61E29195B006360FE /* DimUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A969A61E29195B006360FE /* DimUtility.swift */; };
+		84A969B71E29195B006360FE /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A969A71E29195B006360FE /* ImageLoader.swift */; };
+		84A969B81E29195B006360FE /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A969A81E29195B006360FE /* NetworkAPI.swift */; };
+		84A969B91E29195B006360FE /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A969AA1E29195B006360FE /* NSBundle+Language.m */; };
+		84A969BA1E29195B006360FE /* ProgressUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A969AB1E29195B006360FE /* ProgressUtility.swift */; };
+		84A969BB1E29195B006360FE /* UIBarButtonItem+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A969AD1E29195B006360FE /* UIBarButtonItem+Badge.m */; };
+		84A969BC1E29195B006360FE /* UITextField+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A969AE1E29195B006360FE /* UITextField+Extenstion.swift */; };
+		84A969BD1E29195B006360FE /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A969AF1E29195B006360FE /* UIView+Border.swift */; };
+		84A969BE1E29195B006360FE /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A969B11E29195B006360FE /* UIView+Utils.m */; };
+		84A969BF1E29195B006360FE /* UserDefaultsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A969B21E29195B006360FE /* UserDefaultsAPI.swift */; };
+		84A969C41E2919E4006360FE /* SQLiteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A969C31E2919E4006360FE /* SQLiteAPI.swift */; };
+		84C1C5081E29347C00AA44E2 /* EmployeeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1C5071E29347C00AA44E2 /* EmployeeHandler.swift */; };
+		84C1C50A1E29366500AA44E2 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1C5091E29366500AA44E2 /* String+Extension.swift */; };
+		84C1C50B1E29380100AA44E2 /* hr.db in Resources */ = {isa = PBXBuildFile; fileRef = 84C1C5051E29342800AA44E2 /* hr.db */; };
+		84C1C50F1E294AD000AA44E2 /* SignInTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1C50E1E294AD000AA44E2 /* SignInTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +43,28 @@
 		84176EC51E290756005F25FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84176EC81E290756005F25FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84176ECA1E290756005F25FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A969A21E29195A006360FE /* HRVacations-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HRVacations-Bridging-Header.h"; sourceTree = "<group>"; };
+		84A969A31E29195B006360FE /* AlertUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtility.swift; sourceTree = "<group>"; };
+		84A969A41E29195B006360FE /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		84A969A51E29195B006360FE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		84A969A61E29195B006360FE /* DimUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimUtility.swift; sourceTree = "<group>"; };
+		84A969A71E29195B006360FE /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		84A969A81E29195B006360FE /* NetworkAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAPI.swift; sourceTree = "<group>"; };
+		84A969A91E29195B006360FE /* NSBundle+Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Language.h"; sourceTree = "<group>"; };
+		84A969AA1E29195B006360FE /* NSBundle+Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
+		84A969AB1E29195B006360FE /* ProgressUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressUtility.swift; sourceTree = "<group>"; };
+		84A969AC1E29195B006360FE /* UIBarButtonItem+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Badge.h"; sourceTree = "<group>"; };
+		84A969AD1E29195B006360FE /* UIBarButtonItem+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Badge.m"; sourceTree = "<group>"; };
+		84A969AE1E29195B006360FE /* UITextField+Extenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extenstion.swift"; sourceTree = "<group>"; };
+		84A969AF1E29195B006360FE /* UIView+Border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
+		84A969B01E29195B006360FE /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
+		84A969B11E29195B006360FE /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
+		84A969B21E29195B006360FE /* UserDefaultsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsAPI.swift; sourceTree = "<group>"; };
+		84A969C31E2919E4006360FE /* SQLiteAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteAPI.swift; sourceTree = "<group>"; };
+		84C1C5051E29342800AA44E2 /* hr.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = hr.db; sourceTree = "<group>"; };
+		84C1C5071E29347C00AA44E2 /* EmployeeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeHandler.swift; sourceTree = "<group>"; };
+		84C1C5091E29366500AA44E2 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		84C1C50E1E294AD000AA44E2 /* SignInTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInTVC.swift; sourceTree = "<group>"; };
 		C8C43BD17D11F1FF2F993B5A /* Pods-HRVacations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRVacations.release.xcconfig"; path = "Pods/Target Support Files/Pods-HRVacations/Pods-HRVacations.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,12 +103,90 @@
 			children = (
 				84176EBE1E290756005F25FC /* AppDelegate.swift */,
 				84176EC01E290756005F25FC /* ViewController.swift */,
+				84C1C50C1E294AA800AA44E2 /* Screens */,
+				84C1C5061E29343D00AA44E2 /* Handlers */,
+				84A969C21E2919AD006360FE /* APIs */,
+				84A969C01E291965006360FE /* Utilities */,
+				84A969C11E291980006360FE /* Extensions */,
+				84A9699F1E2918A5006360FE /* Assets */,
+				84A969A51E29195B006360FE /* Constants.swift */,
+				84A969A21E29195A006360FE /* HRVacations-Bridging-Header.h */,
+			);
+			path = HRVacations;
+			sourceTree = "<group>";
+		};
+		84A9699F1E2918A5006360FE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
 				84176EC21E290756005F25FC /* Main.storyboard */,
 				84176EC51E290756005F25FC /* Assets.xcassets */,
 				84176EC71E290756005F25FC /* LaunchScreen.storyboard */,
 				84176ECA1E290756005F25FC /* Info.plist */,
+				84C1C5051E29342800AA44E2 /* hr.db */,
 			);
-			path = HRVacations;
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		84A969C01E291965006360FE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				84A969A31E29195B006360FE /* AlertUtility.swift */,
+				84A969A61E29195B006360FE /* DimUtility.swift */,
+				84A969AB1E29195B006360FE /* ProgressUtility.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		84A969C11E291980006360FE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84A969A41E29195B006360FE /* Array+Extension.swift */,
+				84A969A91E29195B006360FE /* NSBundle+Language.h */,
+				84A969AA1E29195B006360FE /* NSBundle+Language.m */,
+				84A969AC1E29195B006360FE /* UIBarButtonItem+Badge.h */,
+				84A969AD1E29195B006360FE /* UIBarButtonItem+Badge.m */,
+				84A969AE1E29195B006360FE /* UITextField+Extenstion.swift */,
+				84A969AF1E29195B006360FE /* UIView+Border.swift */,
+				84A969B01E29195B006360FE /* UIView+Utils.h */,
+				84A969B11E29195B006360FE /* UIView+Utils.m */,
+				84C1C5091E29366500AA44E2 /* String+Extension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		84A969C21E2919AD006360FE /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				84A969A71E29195B006360FE /* ImageLoader.swift */,
+				84A969A81E29195B006360FE /* NetworkAPI.swift */,
+				84A969B21E29195B006360FE /* UserDefaultsAPI.swift */,
+				84A969C31E2919E4006360FE /* SQLiteAPI.swift */,
+			);
+			name = APIs;
+			sourceTree = "<group>";
+		};
+		84C1C5061E29343D00AA44E2 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				84C1C5071E29347C00AA44E2 /* EmployeeHandler.swift */,
+			);
+			name = Handlers;
+			sourceTree = "<group>";
+		};
+		84C1C50C1E294AA800AA44E2 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				84C1C50D1E294AAE00AA44E2 /* Login */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		84C1C50D1E294AAE00AA44E2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				84C1C50E1E294AD000AA44E2 /* SignInTVC.swift */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 		A7E689FCB347848BED7DB9F4 /* Pods */ = {
@@ -124,6 +242,7 @@
 					84176EBA1E290755005F25FC = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = A769W4M849;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -151,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C1C50B1E29380100AA44E2 /* hr.db in Resources */,
 				84176EC91E290756005F25FC /* LaunchScreen.storyboard in Resources */,
 				84176EC61E290756005F25FC /* Assets.xcassets in Resources */,
 				84176EC41E290756005F25FC /* Main.storyboard in Resources */,
@@ -212,8 +332,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A969B71E29195B006360FE /* ImageLoader.swift in Sources */,
+				84A969B51E29195B006360FE /* Constants.swift in Sources */,
+				84A969B91E29195B006360FE /* NSBundle+Language.m in Sources */,
 				84176EC11E290756005F25FC /* ViewController.swift in Sources */,
+				84A969B31E29195B006360FE /* AlertUtility.swift in Sources */,
+				84A969B61E29195B006360FE /* DimUtility.swift in Sources */,
+				84A969C41E2919E4006360FE /* SQLiteAPI.swift in Sources */,
+				84C1C50F1E294AD000AA44E2 /* SignInTVC.swift in Sources */,
+				84C1C5081E29347C00AA44E2 /* EmployeeHandler.swift in Sources */,
 				84176EBF1E290756005F25FC /* AppDelegate.swift in Sources */,
+				84A969BD1E29195B006360FE /* UIView+Border.swift in Sources */,
+				84C1C50A1E29366500AA44E2 /* String+Extension.swift in Sources */,
+				84A969BE1E29195B006360FE /* UIView+Utils.m in Sources */,
+				84A969BB1E29195B006360FE /* UIBarButtonItem+Badge.m in Sources */,
+				84A969BF1E29195B006360FE /* UserDefaultsAPI.swift in Sources */,
+				84A969BA1E29195B006360FE /* ProgressUtility.swift in Sources */,
+				84A969B41E29195B006360FE /* Array+Extension.swift in Sources */,
+				84A969BC1E29195B006360FE /* UITextField+Extenstion.swift in Sources */,
+				84A969B81E29195B006360FE /* NetworkAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,11 +472,14 @@
 			baseConfigurationReference = 2B5F321F5F7E9EEB572F33A8 /* Pods-HRVacations.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = A769W4M849;
 				INFOPLIST_FILE = HRVacations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = msmeg.HRVacations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HRVacations/HRVacations-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -349,11 +489,13 @@
 			baseConfigurationReference = C8C43BD17D11F1FF2F993B5A /* Pods-HRVacations.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = A769W4M849;
 				INFOPLIST_FILE = HRVacations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = msmeg.HRVacations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HRVacations/HRVacations-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -377,6 +519,7 @@
 				84176ECF1E290756005F25FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

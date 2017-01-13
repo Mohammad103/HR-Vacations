@@ -12,5 +12,6 @@ target 'HRVacations' do
     pod 'FMDB'
     pod 'DZNEmptyDataSet'
 	pod 'DateTools'
+    pod 'JVFloatLabeledTextField'
 
 end
