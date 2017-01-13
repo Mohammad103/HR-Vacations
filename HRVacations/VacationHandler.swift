@@ -43,4 +43,9 @@ class VacationHandler: NSObject {
         return SQLiteAPI.sharedInstance.executeQueryWithResult(query: "INSERT INTO vacation (employee_id,from_date,to_date,employee_notes,status,created_at) VALUES ('\((LoggedInEmployee?.id)!)', '\(fromDate)', '\(toDate)', '\(notes)', '0', '')")
     }
     
+    
+    func updateVacation(id: Int, status: Int, notes: String) -> Bool {
+        return SQLiteAPI.sharedInstance.executeQueryWithResult(query: "UPDATE vacation SET status = '\(status)', response_notes = '\(notes)' WHERE id = '\(id)'")
+    }
+    
 }

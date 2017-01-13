@@ -41,7 +41,7 @@ class MyVacationsTVC: UITableViewController {
         let vacation = vacations[indexPath.row]
         cell.dateFromLbl.text = vacation.fromDate
         cell.dateToLbl.text = vacation.toDate
-        cell.notesLbl.text = vacation.responseNotes
+        cell.notesLbl.text = "Response notes: \(vacation.responseNotes)"
         cell.statusLbl.text = vacation.statusTitle()
         
         

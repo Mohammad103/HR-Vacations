@@ -236,7 +236,7 @@
         <scene sceneID="Iwd-mC-Vcm">
             <objects>
                 <tableViewController title="Employees" id="rIL-tK-7ct" customClass="EmployeesTVC" customModule="HRVacations" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="QwI-2W-f2s">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="QwI-2W-f2s">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -424,6 +424,7 @@
                                     <outlet property="dateToLbl" destination="fiV-BS-IKA" id="M59-TZ-bVw"/>
                                     <outlet property="nameLbl" destination="RLg-Ri-NjG" id="bHf-dJ-SQ4"/>
                                     <outlet property="statusLbl" destination="Heb-eF-bVm" id="8Lc-IO-Fau"/>
+                                    <segue destination="AWc-ka-vkk" kind="show" identifier="VacationDetailsSegue" id="eXi-5h-30T"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -461,7 +462,7 @@
         <!--Add Employee-->
         <scene sceneID="F9G-Ie-cP3">
             <objects>
-                <tableViewController title="Add Employee" id="HG3-eo-wAd" customClass="SignUpTVC" customModule="HRVacations" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Add Employee" id="HG3-eo-wAd" customClass="AddEmployeeTVC" customModule="HRVacations" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="18" id="TO8-4D-NVF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -736,7 +737,7 @@
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="handleSignUp" destination="HG3-eo-wAd" eventType="touchUpInside" id="kqj-V0-uAU"/>
+                                                        <action selector="handleSave" destination="HG3-eo-wAd" eventType="touchUpInside" id="4MZ-0m-CZd"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -757,13 +758,13 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="emailTF" destination="Xrg-a4-8pg" id="Jke-sS-8GE"/>
-                        <outlet property="languageSC" destination="I3G-yN-toF" id="afO-Wf-XRs"/>
+                        <outlet property="jobTitleTF" destination="AaQ-V8-yeK" id="lSP-gf-JLJ"/>
+                        <outlet property="nameTF" destination="Xrg-a4-8pg" id="Acd-Fo-E4U"/>
                         <outlet property="passwordTF" destination="9wv-qL-hbR" id="P44-0W-f65"/>
-                        <outlet property="phoneTF" destination="AaQ-V8-yeK" id="D75-6b-dmZ"/>
+                        <outlet property="roleSC" destination="I3G-yN-toF" id="Wwr-A6-23E"/>
                         <outlet property="showPasswordBtn" destination="vOR-JO-7Ak" id="rnq-EC-ws2"/>
-                        <outlet property="signUpBtn" destination="TK8-8V-mpi" id="leH-Nk-2ab"/>
                         <outlet property="usernameTF" destination="cgi-Th-3us" id="skp-6B-EEw"/>
+                        <outlet property="vacationsTF" destination="lHc-Wd-fHU" id="BB8-eR-X9e"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zl7-zG-3zb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -774,7 +775,7 @@
         <scene sceneID="na3-TQ-aXo">
             <objects>
                 <tableViewController title="My Vacations" id="QL1-vR-SpI" customClass="MyVacationsTVC" customModule="HRVacations" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="105" sectionHeaderHeight="28" sectionFooterHeight="28" id="URV-DM-gq5">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="105" sectionHeaderHeight="28" sectionFooterHeight="28" id="URV-DM-gq5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1495,6 +1496,272 @@
                 </tableViewSection>
             </objects>
             <point key="canvasLocation" x="2027" y="2354"/>
+        </scene>
+        <!--Details-->
+        <scene sceneID="O0W-Sx-E7O">
+            <objects>
+                <tableViewController title="Details" id="AWc-ka-vkk" customClass="VacationDetailsTVC" customModule="HRVacations" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="18" id="4EG-rr-rog">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="separatorColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections>
+                            <tableViewSection id="REn-ei-IrZ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="67" id="eOS-Hp-Cco">
+                                        <rect key="frame" x="0.0" y="35" width="320" height="67"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eOS-Hp-Cco" id="sm1-5F-kP7">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Employee Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GzN-rz-wdl" customClass="JVFloatLabeledTextField">
+                                                    <rect key="frame" x="16" y="8" width="288" height="50"/>
+                                                    <color key="tintColor" red="0.16862745100000001" green="0.23137254900000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.16862745100000001" green="0.23137254900000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                                            <color key="value" red="0.76078431369999999" green="0.77647058820000003" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelYPadding">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelXPadding">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="placeholderYPadding">
+                                                            <real key="value" value="18"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="AWc-ka-vkk" id="HPd-xg-8xE"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="GzN-rz-wdl" firstAttribute="leading" secondItem="sm1-5F-kP7" secondAttribute="leading" constant="16" id="3aV-p1-nmA"/>
+                                                <constraint firstAttribute="trailing" secondItem="GzN-rz-wdl" secondAttribute="trailing" constant="16" id="YYx-Gf-uFq"/>
+                                                <constraint firstItem="GzN-rz-wdl" firstAttribute="top" secondItem="sm1-5F-kP7" secondAttribute="top" constant="8" id="cVK-UP-qvy"/>
+                                                <constraint firstAttribute="bottom" secondItem="GzN-rz-wdl" secondAttribute="bottom" constant="8" id="tHp-X0-J13"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="67" id="NCP-Rz-kVQ">
+                                        <rect key="frame" x="0.0" y="102" width="320" height="67"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NCP-Rz-kVQ" id="cgf-c2-cpJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Date From" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p6b-n1-3e1" customClass="JVFloatLabeledTextField">
+                                                    <rect key="frame" x="16" y="8" width="288" height="50"/>
+                                                    <color key="tintColor" red="0.16862745100000001" green="0.23137254900000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.16862745100000001" green="0.23137254900000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                                            <color key="value" red="0.76078431369999999" green="0.77647058820000003" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelYPadding">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelXPadding">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="placeholderYPadding">
+                                                            <real key="value" value="18"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="AWc-ka-vkk" id="6Ny-oY-eOA"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="p6b-n1-3e1" firstAttribute="leading" secondItem="cgf-c2-cpJ" secondAttribute="leading" constant="16" id="4cA-cq-ovO"/>
+                                                <constraint firstAttribute="bottom" secondItem="p6b-n1-3e1" secondAttribute="bottom" constant="8" id="Wn4-r2-8hF"/>
+                                                <constraint firstAttribute="trailing" secondItem="p6b-n1-3e1" secondAttribute="trailing" constant="16" id="plH-Lc-aRr"/>
+                                                <constraint firstItem="p6b-n1-3e1" firstAttribute="top" secondItem="cgf-c2-cpJ" secondAttribute="top" constant="8" id="y22-Eo-9km"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="67" id="Yza-gr-V0T">
+                                        <rect key="frame" x="0.0" y="169" width="320" height="67"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yza-gr-V0T" id="tBD-4D-5YV">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Date To" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O0H-Wc-ZYY" customClass="JVFloatLabeledTextField">
+                                                    <rect key="frame" x="16" y="8" width="288" height="50"/>
+                                                    <color key="tintColor" red="0.16862745100000001" green="0.23137254900000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.16862745100000001" green="0.23137254900000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                                            <color key="value" red="0.76078431369999999" green="0.77647058820000003" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelYPadding">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelXPadding">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="placeholderYPadding">
+                                                            <real key="value" value="18"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="AWc-ka-vkk" id="iD6-ZU-kQ0"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="O0H-Wc-ZYY" secondAttribute="trailing" constant="16" id="6cZ-b7-v2t"/>
+                                                <constraint firstAttribute="bottom" secondItem="O0H-Wc-ZYY" secondAttribute="bottom" constant="8" id="BzE-Ur-N3F"/>
+                                                <constraint firstItem="O0H-Wc-ZYY" firstAttribute="top" secondItem="tBD-4D-5YV" secondAttribute="top" constant="8" id="RbN-Zo-sLy"/>
+                                                <constraint firstItem="O0H-Wc-ZYY" firstAttribute="leading" secondItem="tBD-4D-5YV" secondAttribute="leading" constant="16" id="y8e-RV-3gZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="67" id="Z3j-ZX-c3A">
+                                        <rect key="frame" x="0.0" y="236" width="320" height="67"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z3j-ZX-c3A" id="8bw-aO-7ie">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Employee Notes" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rYI-Zh-bf8" customClass="JVFloatLabeledTextField">
+                                                    <rect key="frame" x="16" y="8" width="288" height="50"/>
+                                                    <color key="tintColor" red="0.16862745100000001" green="0.23137254900000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.16862745100000001" green="0.23137254900000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                                            <color key="value" red="0.76078431369999999" green="0.77647058820000003" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelYPadding">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelXPadding">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="placeholderYPadding">
+                                                            <real key="value" value="18"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="AWc-ka-vkk" id="R44-Kt-8ZG"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="rYI-Zh-bf8" secondAttribute="trailing" constant="16" id="9Ux-1s-0LB"/>
+                                                <constraint firstItem="rYI-Zh-bf8" firstAttribute="top" secondItem="8bw-aO-7ie" secondAttribute="top" constant="8" id="LfD-Qv-NaQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="rYI-Zh-bf8" secondAttribute="bottom" constant="8" id="b3P-4w-v0b"/>
+                                                <constraint firstItem="rYI-Zh-bf8" firstAttribute="leading" secondItem="8bw-aO-7ie" secondAttribute="leading" constant="16" id="nim-kt-lno"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="67" id="HXZ-jg-wgW">
+                                        <rect key="frame" x="0.0" y="303" width="320" height="67"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HXZ-jg-wgW" id="4fN-B0-Xyy">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9D3-tY-fiJ">
+                                                    <rect key="frame" x="16" y="5" width="288" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.76078431369999999" green="0.77647058820000003" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aSc-uW-dIz">
+                                                    <rect key="frame" x="16" y="30" width="288" height="29"/>
+                                                    <segments>
+                                                        <segment title="Pending"/>
+                                                        <segment title="Approved"/>
+                                                        <segment title="Rejected"/>
+                                                    </segments>
+                                                    <color key="tintColor" red="0.16862745100000001" green="0.23137254900000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="aSc-uW-dIz" secondAttribute="bottom" id="H3o-Ps-Dej"/>
+                                                <constraint firstItem="aSc-uW-dIz" firstAttribute="top" secondItem="9D3-tY-fiJ" secondAttribute="bottom" constant="5" id="MXb-4q-But"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="9D3-tY-fiJ" secondAttribute="trailing" constant="8" id="b10-Hg-Vyb"/>
+                                                <constraint firstItem="aSc-uW-dIz" firstAttribute="leading" secondItem="4fN-B0-Xyy" secondAttribute="leadingMargin" constant="8" id="hjS-oV-Tnu"/>
+                                                <constraint firstAttribute="trailing" secondItem="aSc-uW-dIz" secondAttribute="trailing" constant="16" id="nzG-fN-rPI"/>
+                                                <constraint firstItem="9D3-tY-fiJ" firstAttribute="leading" secondItem="4fN-B0-Xyy" secondAttribute="leading" constant="16" id="qbS-ei-STL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="67" id="CYu-8y-rYV">
+                                        <rect key="frame" x="0.0" y="370" width="320" height="67"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CYu-8y-rYV" id="uWQ-Mj-UBn">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Response Notes" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6cp-7z-gEt" customClass="JVFloatLabeledTextField">
+                                                    <rect key="frame" x="16" y="8" width="288" height="50"/>
+                                                    <color key="tintColor" red="0.16862745100000001" green="0.23137254900000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.16862745100000001" green="0.23137254900000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                                            <color key="value" red="0.76078431369999999" green="0.77647058820000003" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelYPadding">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelXPadding">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="placeholderYPadding">
+                                                            <real key="value" value="18"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="AWc-ka-vkk" id="qT8-kr-PDO"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="6cp-7z-gEt" secondAttribute="bottom" constant="8" id="DmZ-GX-CAe"/>
+                                                <constraint firstItem="6cp-7z-gEt" firstAttribute="top" secondItem="uWQ-Mj-UBn" secondAttribute="top" constant="8" id="Qw4-n4-zYb"/>
+                                                <constraint firstAttribute="trailing" secondItem="6cp-7z-gEt" secondAttribute="trailing" constant="16" id="h9g-Iu-I5L"/>
+                                                <constraint firstItem="6cp-7z-gEt" firstAttribute="leading" secondItem="uWQ-Mj-UBn" secondAttribute="leading" constant="16" id="mEG-Cq-HEI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="AWc-ka-vkk" id="sdh-IV-Ekg"/>
+                            <outlet property="delegate" destination="AWc-ka-vkk" id="GPX-1G-F2W"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="employeeNotesTF" destination="rYI-Zh-bf8" id="FYQ-u3-pK4"/>
+                        <outlet property="fromDateTF" destination="p6b-n1-3e1" id="Dco-LQ-xaG"/>
+                        <outlet property="nameTF" destination="GzN-rz-wdl" id="tBW-JH-Efn"/>
+                        <outlet property="responseNotesTF" destination="6cp-7z-gEt" id="fj2-js-CVi"/>
+                        <outlet property="statusSC" destination="aSc-uW-dIz" id="Xql-b8-DtE"/>
+                        <outlet property="toDateTF" destination="O0H-Wc-ZYY" id="gBI-eZ-SSb"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NtE-H3-B80" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2888" y="918"/>
         </scene>
     </scenes>
     <resources>

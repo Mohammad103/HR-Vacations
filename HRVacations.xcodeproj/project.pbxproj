@@ -40,6 +40,8 @@
 		84C1C5291E2983AB00AA44E2 /* MyVacationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1C5281E2983AB00AA44E2 /* MyVacationCell.swift */; };
 		84C1C52B1E2983BE00AA44E2 /* MyVacationsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1C52A1E2983BE00AA44E2 /* MyVacationsTVC.swift */; };
 		84C1C52D1E2985A800AA44E2 /* AddVacationTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1C52C1E2985A800AA44E2 /* AddVacationTVC.swift */; };
+		84C1C5301E29915200AA44E2 /* VacationDetailsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1C52F1E29915200AA44E2 /* VacationDetailsTVC.swift */; };
+		84C1C5321E29987000AA44E2 /* AddEmployeeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1C5311E29987000AA44E2 /* AddEmployeeTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +85,8 @@
 		84C1C5281E2983AB00AA44E2 /* MyVacationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyVacationCell.swift; sourceTree = "<group>"; };
 		84C1C52A1E2983BE00AA44E2 /* MyVacationsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyVacationsTVC.swift; sourceTree = "<group>"; };
 		84C1C52C1E2985A800AA44E2 /* AddVacationTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddVacationTVC.swift; sourceTree = "<group>"; };
+		84C1C52F1E29915200AA44E2 /* VacationDetailsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacationDetailsTVC.swift; sourceTree = "<group>"; };
+		84C1C5311E29987000AA44E2 /* AddEmployeeTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEmployeeTVC.swift; sourceTree = "<group>"; };
 		C8C43BD17D11F1FF2F993B5A /* Pods-HRVacations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRVacations.release.xcconfig"; path = "Pods/Target Support Files/Pods-HRVacations/Pods-HRVacations.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -216,6 +220,7 @@
 			children = (
 				84C1C51D1E29773C00AA44E2 /* EmployeesTVC.swift */,
 				84C1C51F1E2978CF00AA44E2 /* EmployeeCell.swift */,
+				84C1C5311E29987000AA44E2 /* AddEmployeeTVC.swift */,
 			);
 			name = Employees;
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 			children = (
 				84C1C5231E29810D00AA44E2 /* VacationsTVC.swift */,
 				84C1C5251E2981D700AA44E2 /* VacationCell.swift */,
+				84C1C52F1E29915200AA44E2 /* VacationDetailsTVC.swift */,
 			);
 			name = Vacations;
 			sourceTree = "<group>";
@@ -400,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84A969B51E29195B006360FE /* Constants.swift in Sources */,
+				84C1C5321E29987000AA44E2 /* AddEmployeeTVC.swift in Sources */,
 				84A969B91E29195B006360FE /* NSBundle+Language.m in Sources */,
 				84176EC11E290756005F25FC /* ViewController.swift in Sources */,
 				84A969B31E29195B006360FE /* AlertUtility.swift in Sources */,
@@ -419,6 +426,7 @@
 				84A969BD1E29195B006360FE /* UIView+Border.swift in Sources */,
 				84C1C50A1E29366500AA44E2 /* String+Extension.swift in Sources */,
 				84A969BE1E29195B006360FE /* UIView+Utils.m in Sources */,
+				84C1C5301E29915200AA44E2 /* VacationDetailsTVC.swift in Sources */,
 				84C1C5241E29810D00AA44E2 /* VacationsTVC.swift in Sources */,
 				84A969BB1E29195B006360FE /* UIBarButtonItem+Badge.m in Sources */,
 				84C1C52D1E2985A800AA44E2 /* AddVacationTVC.swift in Sources */,

@@ -47,5 +47,16 @@ class VacationsTVC: UITableViewController {
         
         return cell
     }
+    
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "VacationDetailsSegue") {
+            let path = self.tableView.indexPathForSelectedRow!
+            
+            let vc = segue.destination as! VacationDetailsTVC
+            vc.vacation = vacations[path.row]
+        }
+    }
 
 }
