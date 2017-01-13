@@ -3,11 +3,18 @@
 Project works with cocoapods so make sure you have it installed first
 
 Steps to configure project:
-* Clone
-* Run "pod install" in the project directory
-* Run the application
+
+1. Clone
+
+2. Run "pod install" in the project directory
+
+3. Run the application
+
+
 
 
 You can test with
+
 * Username: mshaker
+
 * Password: 12345678
