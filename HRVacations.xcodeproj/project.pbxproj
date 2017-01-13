@@ -32,6 +32,17 @@
 		84C1C50B1E29380100AA44E2 /* hr.db in Resources */ = {isa = PBXBuildFile; fileRef = 84C1C5051E29342800AA44E2 /* hr.db */; };
 		84C1C50F1E294AD000AA44E2 /* SignInTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1C50E1E294AD000AA44E2 /* SignInTVC.swift */; };
 		84C1C5111E294C5E00AA44E2 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1C5101E294C5E00AA44E2 /* Validation.swift */; };
+		84C1C5181E296F7400AA44E2 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1C5171E296F7400AA44E2 /* Employee.swift */; };
+		84C1C51A1E296FBF00AA44E2 /* Vacation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1C5191E296FBF00AA44E2 /* Vacation.swift */; };
+		84C1C51C1E2974EA00AA44E2 /* ProfileTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1C51B1E2974EA00AA44E2 /* ProfileTVC.swift */; };
+		84C1C51E1E29773C00AA44E2 /* EmployeesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1C51D1E29773C00AA44E2 /* EmployeesTVC.swift */; };
+		84C1C5201E2978CF00AA44E2 /* EmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1C51F1E2978CF00AA44E2 /* EmployeeCell.swift */; };
+		84C1C5221E297DBD00AA44E2 /* VacationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1C5211E297DBD00AA44E2 /* VacationHandler.swift */; };
+		84C1C5241E29810D00AA44E2 /* VacationsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1C5231E29810D00AA44E2 /* VacationsTVC.swift */; };
+		84C1C5261E2981D700AA44E2 /* VacationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1C5251E2981D700AA44E2 /* VacationCell.swift */; };
+		84C1C5291E2983AB00AA44E2 /* MyVacationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1C5281E2983AB00AA44E2 /* MyVacationCell.swift */; };
+		84C1C52B1E2983BE00AA44E2 /* MyVacationsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1C52A1E2983BE00AA44E2 /* MyVacationsTVC.swift */; };
+		84C1C52D1E2985A800AA44E2 /* AddVacationTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1C52C1E2985A800AA44E2 /* AddVacationTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +78,17 @@
 		84C1C5091E29366500AA44E2 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		84C1C50E1E294AD000AA44E2 /* SignInTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInTVC.swift; sourceTree = "<group>"; };
 		84C1C5101E294C5E00AA44E2 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		84C1C5171E296F7400AA44E2 /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		84C1C5191E296FBF00AA44E2 /* Vacation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vacation.swift; sourceTree = "<group>"; };
+		84C1C51B1E2974EA00AA44E2 /* ProfileTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTVC.swift; sourceTree = "<group>"; };
+		84C1C51D1E29773C00AA44E2 /* EmployeesTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeesTVC.swift; sourceTree = "<group>"; };
+		84C1C51F1E2978CF00AA44E2 /* EmployeeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeCell.swift; sourceTree = "<group>"; };
+		84C1C5211E297DBD00AA44E2 /* VacationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacationHandler.swift; sourceTree = "<group>"; };
+		84C1C5231E29810D00AA44E2 /* VacationsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacationsTVC.swift; sourceTree = "<group>"; };
+		84C1C5251E2981D700AA44E2 /* VacationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacationCell.swift; sourceTree = "<group>"; };
+		84C1C5281E2983AB00AA44E2 /* MyVacationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyVacationCell.swift; sourceTree = "<group>"; };
+		84C1C52A1E2983BE00AA44E2 /* MyVacationsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyVacationsTVC.swift; sourceTree = "<group>"; };
+		84C1C52C1E2985A800AA44E2 /* AddVacationTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddVacationTVC.swift; sourceTree = "<group>"; };
 		C8C43BD17D11F1FF2F993B5A /* Pods-HRVacations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRVacations.release.xcconfig"; path = "Pods/Target Support Files/Pods-HRVacations/Pods-HRVacations.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +128,7 @@
 				84176EBE1E290756005F25FC /* AppDelegate.swift */,
 				84176EC01E290756005F25FC /* ViewController.swift */,
 				84C1C50C1E294AA800AA44E2 /* Screens */,
+				84C1C5161E296F5F00AA44E2 /* Models */,
 				84C1C5061E29343D00AA44E2 /* Handlers */,
 				84A969C21E2919AD006360FE /* APIs */,
 				84A969C01E291965006360FE /* Utilities */,
@@ -172,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				84C1C5071E29347C00AA44E2 /* EmployeeHandler.swift */,
+				84C1C5211E297DBD00AA44E2 /* VacationHandler.swift */,
 			);
 			name = Handlers;
 			sourceTree = "<group>";
@@ -180,6 +204,10 @@
 			isa = PBXGroup;
 			children = (
 				84C1C50D1E294AAE00AA44E2 /* Login */,
+				84C1C5131E29609600AA44E2 /* Employees */,
+				84C1C5141E2960A200AA44E2 /* Vacations */,
+				84C1C5271E29839100AA44E2 /* My Vacations */,
+				84C1C5151E2960AB00AA44E2 /* Profile */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -190,6 +218,51 @@
 				84C1C50E1E294AD000AA44E2 /* SignInTVC.swift */,
 			);
 			name = Login;
+			sourceTree = "<group>";
+		};
+		84C1C5131E29609600AA44E2 /* Employees */ = {
+			isa = PBXGroup;
+			children = (
+				84C1C51D1E29773C00AA44E2 /* EmployeesTVC.swift */,
+				84C1C51F1E2978CF00AA44E2 /* EmployeeCell.swift */,
+			);
+			name = Employees;
+			sourceTree = "<group>";
+		};
+		84C1C5141E2960A200AA44E2 /* Vacations */ = {
+			isa = PBXGroup;
+			children = (
+				84C1C5231E29810D00AA44E2 /* VacationsTVC.swift */,
+				84C1C5251E2981D700AA44E2 /* VacationCell.swift */,
+			);
+			name = Vacations;
+			sourceTree = "<group>";
+		};
+		84C1C5151E2960AB00AA44E2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				84C1C51B1E2974EA00AA44E2 /* ProfileTVC.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		84C1C5161E296F5F00AA44E2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84C1C5171E296F7400AA44E2 /* Employee.swift */,
+				84C1C5191E296FBF00AA44E2 /* Vacation.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		84C1C5271E29839100AA44E2 /* My Vacations */ = {
+			isa = PBXGroup;
+			children = (
+				84C1C5281E2983AB00AA44E2 /* MyVacationCell.swift */,
+				84C1C52A1E2983BE00AA44E2 /* MyVacationsTVC.swift */,
+				84C1C52C1E2985A800AA44E2 /* AddVacationTVC.swift */,
+			);
+			name = "My Vacations";
 			sourceTree = "<group>";
 		};
 		A7E689FCB347848BED7DB9F4 /* Pods */ = {
@@ -343,13 +416,24 @@
 				84A969B61E29195B006360FE /* DimUtility.swift in Sources */,
 				84A969C41E2919E4006360FE /* SQLiteAPI.swift in Sources */,
 				84C1C50F1E294AD000AA44E2 /* SignInTVC.swift in Sources */,
+				84C1C51A1E296FBF00AA44E2 /* Vacation.swift in Sources */,
 				84C1C5081E29347C00AA44E2 /* EmployeeHandler.swift in Sources */,
+				84C1C52B1E2983BE00AA44E2 /* MyVacationsTVC.swift in Sources */,
+				84C1C51C1E2974EA00AA44E2 /* ProfileTVC.swift in Sources */,
+				84C1C5221E297DBD00AA44E2 /* VacationHandler.swift in Sources */,
 				84176EBF1E290756005F25FC /* AppDelegate.swift in Sources */,
+				84C1C5181E296F7400AA44E2 /* Employee.swift in Sources */,
+				84C1C5261E2981D700AA44E2 /* VacationCell.swift in Sources */,
+				84C1C5291E2983AB00AA44E2 /* MyVacationCell.swift in Sources */,
+				84C1C51E1E29773C00AA44E2 /* EmployeesTVC.swift in Sources */,
 				84A969BD1E29195B006360FE /* UIView+Border.swift in Sources */,
 				84C1C50A1E29366500AA44E2 /* String+Extension.swift in Sources */,
 				84A969BE1E29195B006360FE /* UIView+Utils.m in Sources */,
+				84C1C5241E29810D00AA44E2 /* VacationsTVC.swift in Sources */,
 				84A969BB1E29195B006360FE /* UIBarButtonItem+Badge.m in Sources */,
 				84A969BF1E29195B006360FE /* UserDefaultsAPI.swift in Sources */,
+				84C1C52D1E2985A800AA44E2 /* AddVacationTVC.swift in Sources */,
+				84C1C5201E2978CF00AA44E2 /* EmployeeCell.swift in Sources */,
 				84A969BA1E29195B006360FE /* ProgressUtility.swift in Sources */,
 				84A969B41E29195B006360FE /* Array+Extension.swift in Sources */,
 				84A969BC1E29195B006360FE /* UITextField+Extenstion.swift in Sources */,
