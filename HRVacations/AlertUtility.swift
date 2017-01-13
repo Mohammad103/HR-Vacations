@@ -18,7 +18,7 @@ class AlertUtility {
             duration: 0.0,
             completeText: NSLocalizedString("Dismiss", comment: "Dismiss"),
             style: .error,
-            colorStyle: 0x34425A,
+            colorStyle: 0x2B3B4E,
             colorTextButton: 0xFFFFFF
         )
     }
@@ -30,7 +30,7 @@ class AlertUtility {
             duration: 0.0,
             completeText: NSLocalizedString("Dismiss", comment: "Dismiss"),
             style: .success,
-            colorStyle: 0x34425A,
+            colorStyle: 0x2B3B4E,
             colorTextButton: 0xFFFFFF
         )
     }

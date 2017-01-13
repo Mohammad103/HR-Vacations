@@ -17,7 +17,7 @@ class ProgressUtility {
     class func setProgressViewStyles() {
         SVProgressHUD.setDefaultStyle(.custom)
         SVProgressHUD.setDefaultMaskType(.clear)
-        SVProgressHUD.setBackgroundColor(UIColor(fromARGBHexString: "34425A"))
+        SVProgressHUD.setBackgroundColor(UIColor(fromARGBHexString: "2B3B4E"))
         SVProgressHUD.setForegroundColor(UIColor(fromARGBHexString: "EFEFF4"))
     }
     
